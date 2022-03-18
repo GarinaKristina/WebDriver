@@ -10,7 +10,7 @@ class PastebinPage extends BasicPage {
     this.pasteNameField = By.id('postform-name');
     this.experationDropDown = By.id('select2-postform-expiration-container');
     this.experationTime10MinuteOption = By.xpath('//li[contains(text(), "10 Minutes")]');
-    this.createNewPasteButton = By.xpath('//*[@id="w0"]/div[5]/div[1]/div[8]/button');
+    this.createNewPasteButton = By.xpath('//*[@id="w0"]//button');
   }
   async typePaste(paste) {
     await this.sendTextToElement(this.pasteTextArea, paste);
